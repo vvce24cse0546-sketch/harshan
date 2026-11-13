@@ -7,7 +7,6 @@ def multiply(a,b):
   return a*b
 
 class TestCalculator(unittest.TestCase):
-
   def test_add(self):
     selfassertEqual(add(20,20),40)
   def test_subtract(self):
@@ -16,7 +15,7 @@ class TestCalculator(unittest.TestCase):
     selfassertEqual(multiply(20,20),40)
 
 if __name__ =="__main__":
-  print("student calsi")
+  print("student calcsi")
   print("addition : ",add(20,20))
   print("subtraction : ",subtract(20,10))
   print("multiplication : ",multiply(5,4))
