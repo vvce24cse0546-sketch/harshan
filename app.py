@@ -1,6 +1,4 @@
 import unittest
-def add(a,b):
-  return a+b
 def subtract(a,b):
   return a-b
 def multiply(a,b):
@@ -15,7 +13,6 @@ class TestCalculator(unittest.TestCase):
 if __name__ =="__main__":
   
   print("student calculator")
-  print("addition : ",add(20,20))
   print("subtraction : ",subtract(20,10))
   print("multiplication : ",multiply(5,4))
   print("\n  Excuting automated Tests ...\n")
