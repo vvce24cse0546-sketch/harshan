@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     stages {
-
         stage('Checkout') {
             steps {
                 checkout scm
@@ -19,16 +18,14 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Python Unit Tests'
-
-                bat 'python -m unittest calculator'
+                bat 'python -m unittest app.py'
             }
         }
 
         stage('Run Application') {
             steps {
                 echo 'Running Student Calculator Application'
-
-                bat 'python calculator.py'
+                bat 'python app.py'
             }
         }
     }
