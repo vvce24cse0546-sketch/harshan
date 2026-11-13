@@ -15,6 +15,7 @@ class TestCalculator(unittest.TestCase):
     selfassertEqual(multiply(20,20),40)
 
 if __name__ =="__main__":
+  print("Hello..")
   print("student calculator")
   print("addition : ",add(20,20))
   print("subtraction : ",subtract(20,10))
